@@ -65,8 +65,7 @@
             <div class="aboutblurb">
               <h2>Hi, I'm Cara.</h2>
               <p>
-                I am a Denver-based MERN stack developer with a keen interest in
-                REST APIs.
+                I am a Denver-based MERN stack developer. I enjoy building REST APIs
               </p>
             </div>
             <div class="skills">
@@ -112,18 +111,72 @@
           </div>
         </div>
       </section>
-      <section class="projects">
-        <div class="projectinfo" id="projects">
+      <section class="projects" id="projects">
+        <div class="projectinfo">
           <h2>My Recent Work</h2>
           <p>Here are some of my recent projects.</p>
         </div>
 
         <div class="projectcards">
           <div class="row">
-            <div class="card card1"></div>
-            <div class="card card2"></div>
-            <div class="card card3"></div>
-            <div class="card card4"></div>
+            <div class="card card1">
+              <div class="content content1">
+                <h3>Exercise Tracker</h3>
+                <!-- <i class="fa fa-info-circle"></i> -->
+              </div>
+            </div>
+            <div class="card card2">
+              <div class="content content2">
+                <h3>Dev Connector</h3>
+                <!-- <i class="fa fa-info-circle"></i> -->
+              </div>
+            </div>
+            <div class="card card3">
+              <div class="content content3">
+                <h3>Carbon Neutral</h3>
+                <!-- <i class="fa fa-info-circle"></i> -->
+              </div>
+            </div>
+            <div class="card card4">
+              <div class="content content4">
+                <p>* currently building *</p>
+                <h3>Realty Team</h3>
+                <!-- <i class="fa fa-info-circle"></i> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup popup1">
+          <div class="wrapper wrapper1">
+            <h2>Exercise Tracker</h2>
+            <p>A web app built with MERN Stack and MongoDB Atlas</p>
+            <button class="close">x</button>
+          </div>
+        </div>
+
+        <div class="popup popup2">
+          <div class="wrapper wrapper2">
+            <h2>Dev Connector</h2>
+            <p>A web app built with MERN Stack and MongoDB Atlas</p>
+            <button class="close">x</button>
+          </div>
+        </div>
+
+        <div class="popup popup3">
+          <div class="wrapper wrapper3">
+            <h2>Carbon Neutral</h2>
+            <p>A web app built with MERN Stack and MongoDB Atlas</p>
+            <button class="close">x</button>
+          </div>
+        </div>
+
+        <div class="popup popup4">
+          <div class="wrapper wrapper4">
+            <p>* currently building *</p>
+            <h2>Realty Team</h2>
+            <p>asdfasdfasdfasdfasdf</p>
+            <button class="close">x</button>
           </div>
         </div>
 
@@ -172,21 +225,6 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800,
-        speedAsDuration: true,
-        easing: "easeOutQuad"
-      });
-
-      function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-      }
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
