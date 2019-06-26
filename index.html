@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
     <title>cgad</title>
   </head>
   <body>
@@ -117,22 +117,16 @@
           <h2>My Recent Work</h2>
           <p>Here are some of my recent projects.</p>
         </div>
+
         <div class="projectcards">
           <div class="row">
-            <div class="column">
-              <div class="left-column">
-                <div class="card">1</div>
-                <div class="card">2</div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="right-column">
-                <div class="card">3</div>
-                <div class="card">4</div>
-              </div>
-            </div>
+            <div class="card card1"></div>
+            <div class="card card2"></div>
+            <div class="card card3"></div>
+            <div class="card card4"></div>
           </div>
         </div>
+
         <div class="splashlearn">
           <div class="getintouch">
             <a data-scroll href="#contact">
@@ -144,8 +138,6 @@
       </section>
       <section class="divider"></section>
       <section class="contact" id="contact">
-        <!-- <div class="backgroundcover2"> -->
-        <!-- <div class="backgroundcover3"> -->
         <div class="contactblurb">
           <h2>Let's work together.</h2>
           <!-- <p>Let's work together.</p> -->
@@ -153,13 +145,11 @@
         <div class="contacts">
           <div class="linkedin">
             <i class="fa fa-linkedin-square"></i>
-            <!-- <p>@cara-adelson</p> -->
             @cara-adelson
             <!-- <i class="fa fa-external-link"></i> -->
           </div>
           <div class="email">
             <i class="fa fa-envelope"></i>
-            <!-- <p id="email">cara.adelson@gmail.com</p> -->
             cara.adelson@gmail.com
             <!-- <button onClick="copyToClipboard('#email')">
                 <i class="fa fa-copy"></i>
@@ -168,15 +158,12 @@
           </div>
           <div class="github">
             <i class="fa fa-github"></i>
-            <!-- <p>@cgad</p> -->
             @cgad
             <!-- <i class="fa fa-external-link"></i> -->
           </div>
         </div>
-        <!-- </div> -->
-        <!-- </div> -->
       </section>
-      <footer>Made by me <i class="fa fa-copyright"></i> 2019</footer>
+      <footer>made by me <i class="fa fa-copyright"></i> 2019</footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -199,7 +186,6 @@
         $temp.val($(element).text()).select();
         document.execCommand("copy");
         $temp.remove();
-        console.log("hi");
       }
     </script>
   </body>
