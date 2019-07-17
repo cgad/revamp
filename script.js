@@ -14,30 +14,30 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
-$(".card1").on("click", function() {
-  $(".popup1").addClass("active");
-  $(".card").addClass("active");
-});
+// $(".card1").on("click", function() {
+//   $(".popup1").addClass("active");
+//   $(".card").addClass("active");
+// });
 
-$(".card2").on("click", function() {
-  $(".popup2").addClass("active");
-  $(".card").addClass("active");
-});
+// $(".card2").on("click", function() {
+//   $(".popup2").addClass("active");
+//   $(".card").addClass("active");
+// });
 
-$(".card3").on("click", function() {
-  $(".popup3").addClass("active");
-  $(".card").addClass("active");
-});
+// $(".card3").on("click", function() {
+//   $(".popup3").addClass("active");
+//   $(".card").addClass("active");
+// });
 
-$(".card4").on("click", function() {
-  $(".popup4").addClass("active");
-  $(".card").addClass("active");
-});
+// $(".card4").on("click", function() {
+//   $(".popup4").addClass("active");
+//   $(".card").addClass("active");
+// });
 
-$(".close").on("click", function() {
-  $(".popup").removeClass("active");
-  $(".card").removeClass("active");
-});
+// $(".close").on("click", function() {
+//   $(".popup").removeClass("active");
+//   $(".card").removeClass("active");
+// });
 
 // card fade out
 // $(".card1").on("click", function() {
