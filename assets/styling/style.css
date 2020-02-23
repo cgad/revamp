@@ -48,12 +48,13 @@ a {
   animation: fadeinblurb 2.5s;
 }
 
+/* to opacity must match .pic1 and .pic2 opacity */
 @keyframes fadeinpics {
   from {
     opacity: 0;
   }
   to {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }
 
@@ -63,7 +64,7 @@ a {
     opacity: 0;
   }
   to {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }
 
@@ -73,7 +74,7 @@ a {
     opacity: 0;
   }
   to {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }
 
@@ -83,7 +84,7 @@ a {
     opacity: 0;
   }
   to {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }
 
@@ -93,7 +94,7 @@ a {
     opacity: 0;
   }
   to {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }
 
@@ -153,7 +154,7 @@ a {
 .pic1 {
   bottom: 223px;
   right: 210px;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .pic1 > img {
@@ -165,7 +166,7 @@ a {
   /* position: relative; */
   bottom: 72px;
   left: 130px;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .pic1,
@@ -239,9 +240,9 @@ a {
   /* border-radius: 10px; */
 }
 
-.logo:hover {
+/* .logo:hover {
   border-bottom: rgba(145, 150, 144, 0) solid 3px;
-}
+} */
 
 .splashblurb,
 .splashlearn {
@@ -338,7 +339,8 @@ a {
 }
 
 .aboutblurb {
-  margin: 10px;
+  max-width: 730px;
+  margin: 10px auto;
   padding: 0;
   text-align: center;
 }
@@ -446,9 +448,16 @@ li {
 }
 
 .projectcards {
+  /* border: 1px solid green; */
   width: 100%;
   text-align: center;
-  /* position: relative; */
+  /* display: flex; */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* card modals */
@@ -504,9 +513,9 @@ li {
   opacity: 1;
   position: relative;
   display: inline-block;
-  width: 300px;
+  max-width: 730px;
   height: 300px;
-  margin: 10px;
+  margin: 20px auto;
   border-radius: 3px;
 }
 
@@ -579,6 +588,10 @@ li {
 .carousel > div:nth-child(odd) {
   background-color: #87ccea;
 } */
+
+.internet {
+  width: 20px;
+}
 
 #edge {
   width: 7%;
@@ -707,9 +720,14 @@ li {
   flex-direction: column;
 }
 
-.content > * {
-  /* margin: 0; */
+/* ? */
+.content::-webkit-scrollbar {
+  display: block;
 }
+
+/* .content > * {
+  margin: 0;
+} */
 
 .techused {
   font-size: 13px;
